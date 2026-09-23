@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virtual ID — Privacy Notice</title>
+<style>
+  :root{ color-scheme: light dark; }
+  body{
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 32px 16px 64px;
+    line-height: 1.6; color: #1f1f23; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark){
+    body{ color: #e6e6ea; background: #0e0e10; }
+    a{ color: #a98fff; }
+  }
+  h1{ font-size: 26px; margin-bottom: 4px; }
+  h2{ font-size: 18px; margin-top: 28px; }
+  .updated{ color: #808089; font-size: 13px; margin-bottom: 24px; }
+  ul{ padding-left: 20px; }
+  li{ margin-bottom: 6px; }
+</style>
+</head>
+<body>
+  <h1>Virtual ID — Privacy Notice</h1>
+  <div class="updated">Last updated: September 23, 2026</div>
+
+  <p><strong>Virtual ID</strong> is a Twitch panel extension that displays a
+  streamer's profile card: profile details, lore, models, channel emotes and
+  badges. It runs entirely in your browser and has <strong>no backend
+  server</strong>: the extension itself does not collect, store, sell or share
+  any personal data.</p>
+
+  <h2>Data the extension uses</h2>
+  <ul>
+    <li><strong>Broadcaster configuration</strong> — everything the streamer
+    enters on the configuration page (texts, colors, image links, Twitch names
+    of related channels) is stored in Twitch's own Extension Configuration
+    Service, under the streamer's account. It contains no viewer data.</li>
+    <li><strong>Viewer identity (optional, with your consent)</strong> — if you
+    click <em>Grant access</em>, Twitch shares your Twitch user ID with the
+    extension. It is used only inside your browser, only while the panel is
+    open, to personalize the emotes &amp; badges tab: your subscription tier,
+    your subscription length and your current/next sub badge. It is never
+    stored, logged or transmitted anywhere other than the lookups listed below.
+    If you decline, the panel simply shows the non-personalized view.</li>
+  </ul>
+
+  <h2>Third-party lookups</h2>
+  <p>To display live, public information without a backend, the extension
+  queries the following services directly from your browser. Each request
+  contains only the minimum needed (a channel name, or — after you grant
+  access — your Twitch username):</p>
+  <ul>
+    <li><strong>Twitch APIs</strong> (api.twitch.tv, gql.twitch.tv,
+    static-cdn.jtvnw.net) — channel emotes, sub &amp; bits badges, category
+    search and box art.</li>
+    <li><strong>decapi.me</strong> — whether a related channel is currently
+    live, and its current category.</li>
+    <li><strong>api.ivr.fi</strong> — public subscription information (tier,
+    cumulative months, follow status) used for the personalized emotes tab.</li>
+    <li><strong>unavatar.io</strong> — public profile pictures of related
+    channels.</li>
+    <li><strong>Cloudinary</strong> (res.cloudinary.com) — hosts the images the
+    streamer uploaded for their card (banner, models).</li>
+  </ul>
+  <p>These services receive the requests as any website you visit would; their
+  own privacy policies apply to them.</p>
+
+  <h2>What the extension does not do</h2>
+  <ul>
+    <li>No accounts, no tracking, no analytics, no advertising.</li>
+    <li>No cookies and no persistent storage in your browser.</li>
+    <li>No selling or sharing of personal data with anyone.</li>
+    <li>Clipboard access only happens when you click an emote to copy its
+    name, and only writes that emote name.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>For any question about this notice or the extension, contact the
+  developer: <strong>Creso</strong> —
+  <a href="https://twitch.tv/cresomasa">twitch.tv/cresomasa</a>.</p>
+</body>
+</html>
